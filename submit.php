@@ -1,8 +1,9 @@
 <?php
-$server_name="localhost";
-$username="root";
-$password="";
-$database_name="database123";
+//Database Credentials
+$server_name=""; //Your server name
+$username=""; //Your username
+$password=""; //Your password
+$database_name=""; //Your database name
 
 $conn=mysqli_connect($server_name,$username,$password,$database_name);
 if(!$conn)
