@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Dashboard - H&F Tracker</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Dashboard</h1>
+      <nav>
+        <ul>
+          <li><a href="#activity-tracker">Activity Tracker</a></li>
+          <li><a href="#progress-chart">Progress Chart</a></li>
+          <li><a href="#goal-progress">Goal & Progress</a></li>
+          <li><a href="#workout-plan">Workout Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sidebar">
+    <h2>Profile</h2>
+    <div class="profile">
+      <img src="images/profile-pic.jpeg" alt="Profile Picture">
+      <h3>user</h3>
+      <p>Email: xxxx@gmail.com</p>
+      <p>Age: 20</p>
+    </div>
+  </div>
+
+
+  <div class="main-section">
+    <section id="activity-tracker">
+      <div class="container">
+        <h2>Activity Tracker</h2>
+        <div class="activity-data">
+          <p>Date: <span id="currentDate"></span></p>
+          <div class="data-item">
+            <h3>Steps Taken</h3>
+            <p id="steps">Loading...</p>
+          </div>
+          <div class="data-item">
+            <h3>Distance Traveled</h3>
+            <p id="distance">Loading...</p>
+          </div>
+          <div class="data-item">
+            <h3>Calories Burned</h3>
+            <p id="calories">Loading...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="progress-chart">
+      <div class="container">
+        <h2>Progress Chart</h2>
+        <div class="progress-chart-image">
+          <img src="images/fitnesschart.png" alt="Progress Chart">
+        </div>
+      </div>
+    </section>
+
+    <section id="goal-progress">
+      <div class="container">
+        <h2>Goal Setting & Progress Tracking</h2>
+        <form id="goalForm">
+          <label for="stepsGoal">Steps Goal:</label>
+          <input type="number" id="stepsGoal" name="stepsGoal" min="0">
+          <label for="caloriesGoal">Calories Goal:</label>
+          <input type="number" id="caloriesGoal" name="caloriesGoal" min="0">
+          <button type="submit" class="btn btn-primary">Set Goals</button>
+        </form>
+        <div class="progress-info">
+          <p>Steps Taken: <span id="stepsTaken">0</span></p>
+          <p>Calories Burned: <span id="caloriesBurned">0</span></p>
+          <p>Steps Goal: <span id="stepsGoalDisplay">-</span></p>
+          <p>Calories Goal: <span id="caloriesGoalDisplay">-</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="workout-plan">
+      <div class="container">
+        <h2>Workout Plan</h2>
+        <div class="workout-plan-items">
+        </div>
+        <button id="addExerciseBtn" class="add-exercise-btn">+</button>
+      </div>
+    </section>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 H&F Tracker. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
